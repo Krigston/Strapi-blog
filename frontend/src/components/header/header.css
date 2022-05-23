@@ -1,0 +1,63 @@
+.header__container {
+  display: flex;
+  flex-direction:inherit;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1.3rem 3rem 0 3rem;
+  position: fixed;
+  left: 50%;
+  border-radius: 0 0 2rem 2rem;
+  flex-wrap: wrap;
+  left:50%;
+  top: 3%;
+  transform:translate(-50%,-50%);
+  background: var(--color-bg);
+  background-image: url(../../../src/assets/bg-texture.png);
+  
+}
+.header__nav{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  color: var(--color-white);
+}
+.header__nav a h3{
+  text-align: center;
+}
+.scroll__up{
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem; 
+  transform: rotate(270deg);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+.scroll__up:hover{
+  color: var(--color-primary);
+}
+.header__container a{
+  color: var(--color-white)
+}
+.header__container a:hover{
+  color: var( --color-primary)
+}
+/*Для средних девайсов*/
+@media screen and (max-width: 1024px) {
+  .scroll__up{
+    display: none;
+  }
+  .header__container {
+    font-size: 1.5rem;
+  }
+  
+}
+/*Для маленьких девайсов*/
+@media screen and (max-width: 600px) {
+  .header__container {
+    font-size: 1rem;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
+  }
+}

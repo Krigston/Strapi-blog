@@ -1,0 +1,115 @@
+.posts__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.posts__title {
+  margin-top: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.post {
+  background: var(--color-primary-variant);
+  margin-bottom: 1rem;
+  padding: 10px;
+  /* box-sizing: border-box; */
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  background: var(--color-primary);
+}
+
+/* .post:hover{
+  border-color: var(--color-primary-variant);
+  background: transparent;
+} */
+.posts__btn {
+  border-radius: 15px;
+  padding: 6px;
+  box-sizing: border-box;
+  background: var(--color-bg-variant);
+  width: max-content;
+  color: var(--color-white);
+}
+.posts__btn a {
+  color: var(--color-white);
+}
+.posts__btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.fullPost__btn {
+  border-radius: 15px;
+  padding: 6px;
+  box-sizing: border-box;
+  background: var(--color-bg-variant);
+  margin: 1rem 0 1rem 0;
+  width: 8rem;
+  color: var(--color-white);
+  text-align: center;
+}
+.fullPost__btn a {
+  color: var(--color-white);
+}
+
+.fullPost__btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.fullPost__text {
+  background: var(--color-primary);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+.pageButton {
+  background: var(--color-bg-variant) !important;
+  color: var(--white-color);
+}
+.sweetPagination .paginationUL .pageItem .activeButton {
+  background: var(--color-primary-variant-2) !important;
+  color: var(--white-color);
+  border: 2px solid white !important;
+}
+.posts__container-under {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.posts__data {
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+}
+/*Для средних девайсов*/
+@media screen and (max-width: 1024px) {
+  .posts__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .fullPost__container{
+    margin-top: 8rem;
+    font-size: 1.2rem;
+  }
+}
+/*Для маленьких девайсов*/
+@media screen and (max-width: 600px) {
+  .pageButton .activeButton .commonButtonStyle  {
+   width: 5rem;
+  }
+  .fullPost__container{
+    margin-top: 10rem;
+    font-size: 1.2rem;
+  }
+}

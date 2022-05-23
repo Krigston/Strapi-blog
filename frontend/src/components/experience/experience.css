@@ -1,0 +1,39 @@
+.experience__container{
+    margin-top: 3rem;
+}
+.experience__container h1{
+    text-align: center;
+    padding: 1.5rem;
+}
+.experience__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.experience__card{
+    background: var(--color-primary-variant-2);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.experience__card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+@media screen and (max-width: 1024px) {
+    .experience__list{
+        grid-template-columns: repeat(2, 2fr);
+        font-size: 1.5rem;
+    }
+  }
+  /*Для маленьких девайсов*/
+  @media screen and (max-width: 600px) {
+    .experience__container h1{
+        line-height: 1.3;
+    }
+  }
